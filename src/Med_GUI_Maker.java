@@ -57,7 +57,7 @@ public class Med_GUI_Maker extends JFrame {
 	    Modes.setBackground(Color.GRAY);
 	    Contents.add(Modes);
 	    
-	    //Same thing as the first lense, reason I made two lenses was so it was a more realistic feeling
+	    //Same thing as the first lense, reason I made two lenses was so it gives a more realistic feeling
 	    Lens2=new JPanel();
 	    Lens2.setBounds(500,20,350,300);
 	    Lens2.setBorder(null);
@@ -112,7 +112,7 @@ public class Med_GUI_Maker extends JFrame {
 	    Info2.setForeground(new Color(255,230,0));
 	    Lens2.add(Info2);
 	    
-	    //This should be self explanatory, basically a label telling the time
+	    //A label created to tell the time
 	    Time=new JTextField();
 	    Time.setBounds(225,0,125,20);
 	    Time.setVisible(false);
@@ -146,7 +146,7 @@ public class Med_GUI_Maker extends JFrame {
 	    Suggestion.setForeground(new Color(250,250,250));
 	    Lens2.add(Suggestion);
 	    
-	    //This is just for fun, telling the temperature of the weather
+	    //This is just for fun, telling the temperature of the weather in normal mode, similar to a menu
 	    Temp=new JTextField();
 	    Temp.setBounds(225,30,125,20);
 	    Temp.setVisible(false);
@@ -158,7 +158,7 @@ public class Med_GUI_Maker extends JFrame {
 	    Temp.setForeground(new Color(200,250,200));
 	    Lens2.add(Temp);
 	    
-	    //This is what it tells of the patient, by their Heart Rate, don't want to make too much
+	    //This tells the condition of the patient (Heart Rate, etc) But for demo use it will only show heart rate.
 	    //because this is a 'prototype'
 	    Condition=new JTextField();
 	    Condition.setBounds(225,0,125,20);
@@ -257,7 +257,7 @@ public class Med_GUI_Maker extends JFrame {
 		setTitle("Medi-Glasses");
 	}
 	
-	//Now these are the things that happen when that button is pressed
+	//What occurs when a button is pressed on Normal,XRay, and Medical
 	private void NormalAction( ActionEvent event )  
 	   {                                       
 		 Normal.setEnabled(false);   //disables Normal Button
@@ -363,7 +363,7 @@ public class Med_GUI_Maker extends JFrame {
 		 Off.setEnabled(false);
 		 
 	   } 
-	public static void main( String args[] )
+	public static void main( String args[] )//Instantiates the Medi-Glass
 	{
 		Med_GUI_Maker Glasses= new Med_GUI_Maker();
 		Glasses.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
